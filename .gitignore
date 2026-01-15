@@ -15,6 +15,7 @@
 *.logs
 *.nupkg
 *.cache
+
 *.manifest.json
 
 # Ignore publish-related files
@@ -38,6 +39,7 @@
 # Ignore system files
 .DS_Store
 Thumbs.db
+env.txt
 
 # Ignore node_modules (if applicable)
 node_modules/

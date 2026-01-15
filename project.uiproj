@@ -1,0 +1,6 @@
+{
+  "Name": "LANCAMENTO_NFe",
+  "ProjectType": "Process",
+  "Description": "RPA DE AUTOMAÇÃO PARA LANÇAMENTO DE NOTAS FISCAIS DO BD CONTOSO",
+  "MainFile": "Main.xaml"
+}
