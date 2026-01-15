@@ -103,7 +103,7 @@
       <AssemblyReference>System.Private.Xml</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1281,1907" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1281,2108" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
     </Sequence.Variables>
@@ -112,21 +112,21 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="554,1884" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="554,2085" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="552,1357" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="552,1558" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="AllProcess" sap:VirtualizedContainerService.HintSize="518,1293" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="AllProcess" sap:VirtualizedContainerService.HintSize="518,1494" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Init" sap:VirtualizedContainerService.HintSize="484,951" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence DisplayName="Init" sap:VirtualizedContainerService.HintSize="484,1152" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="jsonEnv" />
                 <Variable x:TypeArguments="njl:JObject" Name="JsonObj" />
@@ -146,7 +146,7 @@
                   <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[JsonObj.ToObject(Of Dictionary(Of String, Object))()]</InArgument>
                 </Assign.Value>
               </Assign>
-              <Sequence DisplayName="GetMailCredencials" sap:VirtualizedContainerService.HintSize="450,126" sap2010:WorkflowViewState.IdRef="Sequence_11">
+              <Sequence DisplayName="GetMailCredencials" sap:VirtualizedContainerService.HintSize="450,327" sap2010:WorkflowViewState.IdRef="Sequence_11">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="strEmail" />
                   <Variable x:TypeArguments="x:String" Name="strPassword" />
@@ -157,6 +157,15 @@
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
+                <Assign sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Assign_1">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[strEmail]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[Config("email").ToString]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2HlaPc+U4U2vlCjhcGAouwAAAAACAAAAAAAQZgAAAAEAACAAAACehp3Md3n7KDr78JivREu7QnVagLQ5piu5n5U46B/aWQAAAAAOgAAAAAIAACAAAAA7PIZvC1wHu+RmLcZDICBmSyCSs+hejfk6Oho2hJmPZCAAAADhGUS3hlzouQVhahHXF2hIQ0DgQsiok9Shapvyox4uEUAAAADvO4MEmue/BuokWH4rIppiR+ajy+UF6IkdoSll9oWrkhdSL7Bhz78vaNjwR6GxLBcdF5LrdQVNdfbhaidoNUGW" Result="[strPassword]" />
               </Sequence>
               <Sequence DisplayName="WriteDataTable" sap:VirtualizedContainerService.HintSize="450,130" sap2010:WorkflowViewState.IdRef="Sequence_12">
                 <sap:WorkflowViewStateService.ViewState>
