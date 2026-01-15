@@ -8,7 +8,6 @@
 
 # Ignore UiPath specific files
 *.local
-*.screenshots
 *.objects
 *.testresults
 *.log
