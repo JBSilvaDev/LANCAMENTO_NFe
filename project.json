@@ -1,21 +1,18 @@
 {
   "name": "LANCAMENTO_NFe",
-  "projectId": "dbbd6c18-b64e-4221-81e3-ca15ba105244",
-  "description": "RPA DE AUTOMAÇÃO PARA LANÇAMENTO DE NOTAS FISCAIS DO BD CONTOSO",
+  "projectId": "d0345785-bede-43e6-a41a-fea1d750aa4f",
+  "description": "Robotic Enterprise Framework",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.24.4]",
-    "UiPath.Mail.Activities": "[2.5.10]",
-    "UiPath.PDF.Activities": "[3.25.0]",
-    "UiPath.System.Activities": "[24.10.7]",
+    "UiPath.System.Activities": "[24.10.8]",
     "UiPath.Testing.Activities": "[24.10.4]",
-    "UiPath.UIAutomation.Activities": "[24.10.13]",
-    "UiPath.WebAPI.Activities": "[2.3.2]"
+    "UiPath.UIAutomation.Activities": "[24.10.14]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
-  "studioVersion": "24.10.16.0",
+  "studioVersion": "24.10.18.0",
   "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
@@ -45,14 +42,57 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e862a74b-36af-474e-b51e-e13e8c851e7e",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\GetTransactionDataTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b96b08fb-5b64-4f5a-a58d-c9456932e506",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\InitAllApplicationsTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "387e391c-0f53-4f32-8ade-77634e9d7896",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\InitAllSettingsTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "cafa1643-4f15-4929-8714-137e78a3f338",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\MainTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7a07e920-cf8a-42b1-a288-275978cae571",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\ProcessTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a4c825b4-fb3f-47cd-a4d0-e1cf6c2f5114",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
+      }
+    ],
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "ee078749-a4a7-42ac-a000-8b8eec0e2ad5",
+      "uniqueId": "8d6dc24c-40ee-4fe6-a0aa-590e03a14a7f",
       "input": [],
       "output": []
     }
