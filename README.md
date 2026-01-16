@@ -37,3 +37,12 @@
 2. Implement InitiAllApplications.xaml and CloseAllApplicatoins.xaml workflows, linking them in the Config.xlsx fields
 3. Implement GetTransactionData.xaml and SetTransactionStatus.xaml according to the transaction type being used (Orchestrator queues by default)
 4. Implement Process.xaml workflow and invoke other workflows related to the process being automated
+
+
+link: https://github.com/JBSilvaDev/LANCAMENTO_NFe
+
+para informações sobre regex acessar e-book no repositorio: https://github.com/JBSilvaDev/Regex
+
+Enviada as faturas por e-mail 
+
+Criada pasta no e-mail para mover os e-mails com as faturas apos processados (Processed_Invoices)
