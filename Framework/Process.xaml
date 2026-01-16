@@ -1,7 +1,8 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Process" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Process" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property sap2010:Annotation.AnnotationText="Transaction item to be processed." Name="in_TransactionItem" Type="InArgument(ui:QueueItem)" />
     <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="in_strPathFilesPDF" Type="InArgument(scg:IList(x:String))" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
@@ -37,10 +38,20 @@
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="40">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="80">
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -79,21 +90,84 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1282,778.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1265,752" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
-    <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="416,88" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="AllProcess - Invoke Workflow File (ProcessBox\AllProcess.xaml)" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ProcessBox\ProcessData.xaml">
-      <ui:InvokeWorkflowFile.Arguments>
-        <scg:Dictionary x:TypeArguments="x:String, Argument" />
-      </ui:InvokeWorkflowFile.Arguments>
-    </ui:InvokeWorkflowFile>
+    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="438,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
+    <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="438,88" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,396" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ProcessData - Invoke Workflow File (ProcessBox\ProcessData.xaml)" sap:VirtualizedContainerService.HintSize="400,145" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ProcessBox\ProcessData.xaml">
+          <ui:InvokeWorkflowFile.Arguments>
+            <InArgument x:TypeArguments="scg:IList(x:String)" x:Key="in_strPathFilesPDF">[in_strPathFilesPDF]</InArgument>
+          </ui:InvokeWorkflowFile.Arguments>
+        </ui:InvokeWorkflowFile>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="394,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Error" Message="[&quot;Ocorreu um erro na execução: &quot; + exception.Message]" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+      <TryCatch.Finally>
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Contoso Invoicing" sap:VirtualizedContainerService.HintSize="450,521" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="e20abb94-ea53-4f9b-bf21-47ae9e7b80ee" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,230" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,168" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Finalizando aplicação&quot;]" />
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="523, 216, 875, 600" ContentHash="x4xQFSyiKECMiuhQjlzjvQ" FilePath="C:\Program Files (x86)\Contoso, Inc\Contoso Invoicing\legacyinvoicingapp.exe" IconBase64="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" InformativeScreenshot="fbb3c5282f34c17b40ff97c54e29e049.png" Reference="3rVjfcpwoEWcrQkN7OaUrw/Ui3Rui25zEucsZMzuldNaQ" Selector="&lt;wnd app='legacyinvoicingapp.exe' cls='HwndWrapper*' title='Contoso Invoicing' /&gt;" Title="Contoso Invoicing" Version="V1" />
+          </uix:NApplicationCard.TargetApp>
+        </uix:NApplicationCard>
+      </TryCatch.Finally>
+    </TryCatch>
   </Sequence>
 </Activity>
