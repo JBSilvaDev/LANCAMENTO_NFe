@@ -143,7 +143,7 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1265,3655" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1224,8217" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
       <Variable x:TypeArguments="x:String" Name="strEmail" />
@@ -159,7 +159,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="624,3632" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="721,8194" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -167,19 +167,19 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="586,3381" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="683,7943" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="AllProcess" sap:VirtualizedContainerService.HintSize="552,3321" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="AllProcess" sap:VirtualizedContainerService.HintSize="649,7883" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Init" sap:VirtualizedContainerService.HintSize="518,1138" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence DisplayName="Init" sap:VirtualizedContainerService.HintSize="615,1138" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="jsonEnv" />
                 <Variable x:TypeArguments="njl:JObject" Name="JsonObj" />
@@ -239,7 +239,7 @@
                     <InArgument x:TypeArguments="x:String">[Environment.CurrentDirectory + "data\output\Reconciliation.xlsx"]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <ui:BuildDataTable DataTable="[dtExcelSheet]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ID&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Account_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Contact_x0020_Email&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Amount&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+                <ui:BuildDataTable DataTable="[dtExcelSheet]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;ID&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Account_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Contact_x0020_Email&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Amount&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
               </Sequence>
               <Sequence DisplayName="InitApps" sap:VirtualizedContainerService.HintSize="468,48" sap2010:WorkflowViewState.IdRef="Sequence_13">
                 <sap:WorkflowViewStateService.ViewState>
@@ -251,7 +251,7 @@
                 <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Start Process" FileName="C:\Program Files (x86)\Contoso, Inc\Contoso Invoicing\legacyinvoicingapp.exe" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="StartProcess_1" />
               </Sequence>
             </Sequence>
-            <Sequence DisplayName="GetData" sap:VirtualizedContainerService.HintSize="518,1738" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence DisplayName="GetData" sap:VirtualizedContainerService.HintSize="615,1738" sap2010:WorkflowViewState.IdRef="Sequence_7">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -288,7 +288,7 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:SaveMailAttachments Attachments="{x:Null}" ResourceAttachments="{x:Null}" DisplayName="Save Email Attachments" ExcludeInlineAttachments="False" FolderPath="[Environment.CurrentDirectory + &quot;\dados\attachments&quot;]" sap:VirtualizedContainerService.HintSize="382,224" sap2010:WorkflowViewState.IdRef="SaveMailAttachments_1" Message="[mail]" OverwriteExisting="True" />
+                        <ui:SaveMailAttachments Attachments="{x:Null}" ResourceAttachments="{x:Null}" DisplayName="Save Email Attachments" ExcludeInlineAttachments="False" FolderPath="[Environment.CurrentDirectory + &quot;\data\attachments&quot;]" sap:VirtualizedContainerService.HintSize="382,224" sap2010:WorkflowViewState.IdRef="SaveMailAttachments_1" Message="[mail]" OverwriteExisting="True" />
                         <ui:MoveIMAPMailMessageToFolder ClientName="{x:Null}" ClientVersion="{x:Null}" FromFolder="{x:Null}" SecurePassword="{x:Null}" ConnectionMode="LegacyConfiguration" DisplayName="Move IMAP Email" Email="[strEmail]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="382,215" sap2010:WorkflowViewState.IdRef="MoveIMAPMailMessageToFolder_1" IgnoreCRL="False" MailFolder="Processed_Invoices" MailMessage="[mail]" Password="[strPassword]" Port="993" SecureConnection="SslOnConnect" Server="imap.gmail.com" UseISConnection="False" UseOAuth="False">
                           <ui:MoveIMAPMailMessageToFolder.ConnectionDetailsBackupSlot>
                             <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="LegacyConfiguration">
@@ -341,7 +341,7 @@
                 </ui:ForEachFileX>
               </Sequence>
             </Sequence>
-            <Sequence DisplayName="ProcessData" sap:VirtualizedContainerService.HintSize="518,362" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <Sequence DisplayName="ProcessData" sap:VirtualizedContainerService.HintSize="615,4924" sap2010:WorkflowViewState.IdRef="Sequence_8">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="strDate" />
                 <Variable x:TypeArguments="x:String" Name="strAccountName" />
@@ -356,13 +356,13 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentPDF" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[strPathFilesPDF]">
+              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentPDF" sap:VirtualizedContainerService.HintSize="581,4619" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[strPathFilesPDF]">
                 <ui:ForEach.Body>
                   <ActivityAction x:TypeArguments="x:String">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:String" Name="currentPDF" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="547,1870" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="547,4473" sap2010:WorkflowViewState.IdRef="Sequence_19">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -461,19 +461,19 @@
                           </Assign.Value>
                         </Assign>
                       </Sequence>
-                      <Sequence DisplayName="SystemLaunch" sap:VirtualizedContainerService.HintSize="513,140" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                      <Sequence DisplayName="SystemLaunch" sap:VirtualizedContainerService.HintSize="513,2743" sap2010:WorkflowViewState.IdRef="Sequence_23">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Contoso Invoicing" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="04057fa7-2b0b-4405-a582-1cd5697f3421" Version="V2">
+                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Contoso Invoicing" sap:VirtualizedContainerService.HintSize="450,2651" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="04057fa7-2b0b-4405-a582-1cd5697f3421" Version="V2">
                           <uix:NApplicationCard.Body>
                             <ActivityAction x:TypeArguments="x:Object">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,2633" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,2297" sap2010:WorkflowViewState.IdRef="Sequence_25">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -483,7 +483,7 @@
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable CVScreenId="3d845a6c-4403-4e18-b060-8c2902c76d17" ContentHash="rldVpZbvu0SaKcNdiaYdiA" CvTextArea="117, 257, 44, 12" CvTextArgument="Invoices" CvType="Text" DesignTimeRectangle="116, 253, 47, 20" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;ctrl name='LegacyInvoicingApp.Models.FolderModel' role='outline item' /&gt;&lt;ctrl name='LegacyInvoicingApp.Models.FolderModel' role='outline item' /&gt;&lt;ctrl name='LegacyInvoicingApp.Models.FolderModel' role='outline item' /&gt;&lt;ctrl name='LegacyInvoicingApp.Models.TableModel' role='outline item' /&gt;&lt;ctrl name='Invoices' role='text' automationid='' check:text='Invoices' /&gt;" Guid="2f079cb2-a56d-4128-a099-1a9c8269d301" InformativeScreenshot="ca877f8f9276d1ab68d30ee42126e949.png" Reference="3rVjfcpwoEWcrQkN7OaUrw/yE9gaqA3o0iL5UA_J7uaWQ" ScopeSelectorArgument="&lt;wnd app='legacyinvoicingapp.exe' cls='HwndWrapper*' title='Contoso Invoicing' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                           <uix:Target CVScreenId="3d845a6c-4403-4e18-b060-8c2902c76d17" CvElementArea="95, 253, 20, 19" CvType="Icon" DesignTimeRectangle="97, 255, 16, 15" ElementType="Icon" FullSelectorArgument="&lt;ctrl idx='4' name='LegacyInvoicingApp.Models.FolderModel' role='outline item' /&gt;&lt;ctrl idx='3' name='LegacyInvoicingApp.Models.FolderModel' role='outline item' /&gt;&lt;ctrl name='LegacyInvoicingApp.Models.FolderModel' role='outline item' /&gt;&lt;ctrl name='LegacyInvoicingApp.Models.TableModel' role='outline item' /&gt;&lt;ctrl role='graphic' /&gt;" FuzzySelectorArgument="&lt;ctrl name='LegacyInvoicingApp.Models.FolderModel' role='outline item' /&gt;&lt;ctrl name='LegacyInvoicingApp.Models.FolderModel' role='outline item' /&gt;&lt;ctrl name='LegacyInvoicingApp.Models.FolderModel' role='outline item' /&gt;&lt;ctrl name='LegacyInvoicingApp.Models.TableModel' role='outline item' /&gt;&lt;ctrl role='graphic' automationid='' /&gt;" Guid="253aa5e3-c4b3-47d6-915b-29b524261611" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFvSURBVDhPvZFPSwJRFMX9ZK3LzxFto2Wr/nyGWgma6KiLQIKIgv4snNeYJqhok+YmZARnYaDYYlycOCNzffTaZEMXDtxz5/7OvDeTQMyV+D74a0lgqqywc2pj+6TyK5EhawTuphxs7F+uJbJG4F7KxtbhNZLHN6LNgyskj1aefTjTdsiQNQLT+XO0Bx7e/ZnoodrGYPQhnj1n+g4ZskZgoVjCZDKRByzXfUUQBOLZc6YXGbJRSeBZNodarQ7XdUW2rdDpdMSz50zfIUPWCLQKJfi+j8ViIep2XzCff4pnz5m+Q4asEZi3ihgOh5hOZ6JWqx1eKfLsOdN3yJA1AnnsRqOBXq8vUuoxvFbk2XOm75D58cqx/5Rc3kK//4bxeCzi2z3PE8+eM32HDFkjkMeu15/DE0RSSoU/IfLsl59htUPmf66cyWRxe3cPp/okKpcvUKkoOM7Ss+dM3yGTzmTNwGazBcsqriWyRmBcFXvgF//jTbf5Puj1AAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, CV" />
                                         </scg:List>
                                       </uix:TargetAnchorable.Anchors>
@@ -504,7 +504,7 @@
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable CVScreenId="197676d0-a1bf-47c2-b4bf-16d6ce185e22" ContentHash="WAVxJUiUJkiDRpIVPDJwDA" CvElementArea="18, 55, 20, 21" CvType="Icon" DesignTimeRectangle="20, 58, 16, 16" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;ctrl automationid='imgNewFileInner1' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='imgNewFileInner1' role='graphic' /&gt;" Guid="ee73fff6-1938-4c5f-9d9e-e67dbac7b063" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJCSURBVDhPrdHLThNhHIZx7s6EG3Djyo0rF14AK+KGmLjSGDEqQaPxlGBckIgREVJLWyw9AGVaKhUp0zm2nfM308fMTEOQKtTA4tl8i1/+78yEaZpcZhOnHy7aMWh0tlE3r2N35nBaM6h7s5j799Fyk9TqLXbqLbakFhuVOodteQQaAbumjC2/RCtcw5WnsI9mULNXEcZbLMejb3v0LJdPmSoLS3kazf0R7E9Q38c+mMU5nCYSy0TiI+7BFL36XcLBgDAaIMKIzHeJIyPg8Zslmq2fZ4DmLzz9BZ5yG2G9IgoW8TvTCHUeEQ0IwgG+iFgt1NhqKjxfLDJ15xFSo/kPsNumvzeNsnyFbu0Wwn6Cnpkk0N8TiAgvSGsd6mSLNdYK26zkyjx49g5N00ZBU9lBL9/EURdQGg8RTgZPfkqvegMvCHH9CMcPcbwQO85Nuzf3ClVV/wIaGqZ+QNfUKFaqeL6LH7g4too7hCxXYDkhfUfQtwU9W5wBnihflnB9kUw8xmLESZFunBUkjQXmShKOJ5KZ8awESxCBaQUYfR+jF6D3/DHBTQnbFcOZ6cT4qhjTh5DWTRsLXN/cxXKD5LrTWIyopodienQMb0ywuJtAMZh8s3jmEFNMP4HkYWOB2Ri0g+SvxmB6XTpRMXxk3eNI92hr/wM6KRjPNfoBWi9A7Z7EXNqqOx6YL+2yUZHIFKqs5aus5ip8XS+zsl7mS7bM8re4Ep8zJeZffzgflOUONalBdbt2bnvNH+i6fjZ4kS4d/A0d983k3NgzlwAAAABJRU5ErkJggg==" InformativeScreenshot="91d4aff3a15e510e6c3e51b510e9ab90.png" Reference="3rVjfcpwoEWcrQkN7OaUrw/JBwIk151L0qKBXJ0vJByrA" ScopeSelectorArgument="&lt;wnd app='legacyinvoicingapp.exe' cls='HwndWrapper*' title='Contoso Invoicing' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                           <uix:Target CVScreenId="197676d0-a1bf-47c2-b4bf-16d6ce185e22" CvTextArea="14, 34, 20, 12" CvTextArgument="File" CvType="Text" DesignTimeRectangle="15, 32, 18, 16" ElementType="Text" FullSelectorArgument="&lt;ctrl name='File' role='menu item' /&gt;&lt;ctrl name='_File' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='File' role='menu item' /&gt;&lt;ctrl name='_File' role='text' automationid='' check:text='_File' /&gt;" Guid="d29e201b-a223-4ef1-b8c8-70686346f0d6" SearchSteps="Selector, FuzzySelector, CV" />
                                         </scg:List>
                                       </uix:TargetAnchorable.Anchors>
@@ -521,116 +521,66 @@
                                     </uix:VerifyExecutionOptions>
                                   </uix:NClick.VerifyOptions>
                                 </uix:NClick>
-                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Date'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="04057fa7-2b0b-4405-a582-1cd5697f3421" Text="[strDateFormattedFinal]" Version="V4">
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Date'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="04057fa7-2b0b-4405-a582-1cd5697f3421" Text="[strDateFormattedFinal]" Version="V4">
                                   <uix:NTypeInto.Target>
                                     <uix:TargetAnchorable CVScreenId="87169e17-2bf5-4835-80fc-553ae41a1bd3" ContentHash="L0dQABzAPEerGU0gcLqe9g" CvElementArea="351, 345, 202, 28" CvType="InputBox" DesignTimeRectangle="352, 346, 200, 26" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='txtDate103' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='txtDate103' role='editable text' /&gt;" Guid="d47fbd17-375d-47dd-a0d1-6c8214819210" InformativeScreenshot="0f52c644a57d5f76e2398012f5fed41b.png" IsResponsive="True" Reference="3rVjfcpwoEWcrQkN7OaUrw/6AZJz4jIAUeLHv6ZqKIbvg" ScopeSelectorArgument="&lt;wnd app='legacyinvoicingapp.exe' cls='HwndWrapper*' title='Contoso Invoicing' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                           <uix:Target CVScreenId="87169e17-2bf5-4835-80fc-553ae41a1bd3" CvTextArea="311, 353, 32, 12" CvTextArgument="Date:" CvType="Text" DesignTimeRectangle="312, 351, 30, 16" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='lblDate103' /&gt;&lt;ctrl name='Date:' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='lblDate103' /&gt;&lt;ctrl name='Date:' role='text' automationid='' check:text='Date:' /&gt;" Guid="efb9a54d-dd47-4b25-9474-c5380776f4a4" SearchSteps="Selector, FuzzySelector, CV" />
                                         </scg:List>
                                       </uix:TargetAnchorable.Anchors>
                                     </uix:TargetAnchorable>
                                   </uix:NTypeInto.Target>
-                                  <uix:NTypeInto.VerifyOptions>
-                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
-                                        <InArgument x:TypeArguments="x:Boolean" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
-                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                        <InArgument x:TypeArguments="x:Double" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                    </uix:VerifyExecutionTypeIntoOptions>
-                                  </uix:NTypeInto.VerifyOptions>
                                 </uix:NTypeInto>
-                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Account'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="04057fa7-2b0b-4405-a582-1cd5697f3421" Text="[strAccountName]" Version="V4">
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Account'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="04057fa7-2b0b-4405-a582-1cd5697f3421" Text="[strAccountName]" Version="V4">
                                   <uix:NTypeInto.Target>
                                     <uix:TargetAnchorable CVScreenId="38843e2e-209f-4753-b6be-7e7d7eaa8657" ContentHash="tCoOwnAKD0iOgc1XlmgIwg" CvElementArea="350, 381, 203, 28" CvType="InputBox" DesignTimeRectangle="352, 382, 200, 26" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='txtAccount103' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='txtAccount103' role='editable text' /&gt;" Guid="1a691d2b-c9e9-4529-9f30-27662b09f72c" InformativeScreenshot="958c422ee442ed61d6c84ea3e1b0621b.png" IsResponsive="True" Reference="3rVjfcpwoEWcrQkN7OaUrw/xNKWsLiZa0-mZOFHDu2t_g" ScopeSelectorArgument="&lt;wnd app='legacyinvoicingapp.exe' cls='HwndWrapper*' title='Contoso Invoicing' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                           <uix:Target CVScreenId="38843e2e-209f-4753-b6be-7e7d7eaa8657" CvTextArea="290, 389, 52, 12" CvTextArgument="Account:" CvType="Text" DesignTimeRectangle="292, 387, 50, 16" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='lblAccountChooser103' /&gt;&lt;ctrl name='Account:' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='lblAccountChooser103' /&gt;&lt;ctrl name='Account:' role='text' automationid='' check:text='Account:' /&gt;" Guid="241049b4-6164-4684-af69-87f4c596096a" SearchSteps="Selector, FuzzySelector, CV" />
                                         </scg:List>
                                       </uix:TargetAnchorable.Anchors>
                                     </uix:TargetAnchorable>
                                   </uix:NTypeInto.Target>
-                                  <uix:NTypeInto.VerifyOptions>
-                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
-                                        <InArgument x:TypeArguments="x:Boolean" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
-                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                        <InArgument x:TypeArguments="x:Double" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                    </uix:VerifyExecutionTypeIntoOptions>
-                                  </uix:NTypeInto.VerifyOptions>
                                 </uix:NTypeInto>
-                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Contact'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="04057fa7-2b0b-4405-a582-1cd5697f3421" Text="[strMailInvoice]" Version="V4">
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Contact'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="04057fa7-2b0b-4405-a582-1cd5697f3421" Text="[strMailInvoice]" Version="V4">
                                   <uix:NTypeInto.Target>
                                     <uix:TargetAnchorable CVScreenId="700c82e5-8e2e-42f2-8469-172528186398" ContentHash="4dqqCaZmrkWFOsSTyQ86HQ" CvElementArea="351, 417, 203, 28" CvType="InputBox" DesignTimeRectangle="352, 418, 200, 26" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='txtContactEmail103' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='txtContactEmail103' role='editable text' /&gt;" Guid="2838733f-1551-4c9d-a064-651f7f4930ab" InformativeScreenshot="6a011826d51d00571920a684e0a73371.png" IsResponsive="True" Reference="3rVjfcpwoEWcrQkN7OaUrw/QM919zeioEKsIffQH48jUw" ScopeSelectorArgument="&lt;wnd app='legacyinvoicingapp.exe' cls='HwndWrapper*' title='Contoso Invoicing' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                           <uix:Target CVScreenId="700c82e5-8e2e-42f2-8469-172528186398" CvTextArea="294, 426, 48, 11" CvTextArgument="Contact:" CvType="Text" DesignTimeRectangle="295, 423, 47, 16" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='lblContactEmail103' /&gt;&lt;ctrl name='Contact:' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='lblContactEmail103' /&gt;&lt;ctrl name='Contact:' role='text' automationid='' check:text='Contact:' /&gt;" Guid="e94d93f8-9b5b-4852-8f67-038d3d6e495b" SearchSteps="Selector, FuzzySelector, CV" />
                                         </scg:List>
                                       </uix:TargetAnchorable.Anchors>
                                     </uix:TargetAnchorable>
                                   </uix:NTypeInto.Target>
-                                  <uix:NTypeInto.VerifyOptions>
-                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
-                                        <InArgument x:TypeArguments="x:Boolean" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
-                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                        <InArgument x:TypeArguments="x:Double" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                    </uix:VerifyExecutionTypeIntoOptions>
-                                  </uix:NTypeInto.VerifyOptions>
                                 </uix:NTypeInto>
-                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Amount'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,286" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="04057fa7-2b0b-4405-a582-1cd5697f3421" Text="[strTotal]" Version="V4">
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Amount'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,250" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="04057fa7-2b0b-4405-a582-1cd5697f3421" Text="[strTotal]" Version="V4">
                                   <uix:NTypeInto.Target>
                                     <uix:TargetAnchorable CVScreenId="700c82e5-8e2e-42f2-8469-172528186398" ContentHash="O2KHzkMW5kCDnXDHUlK-Eg" CvElementArea="351, 453, 202, 28" CvType="InputBox" DesignTimeRectangle="352, 454, 200, 26" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='txtAmount103' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='txtAmount103' role='editable text' /&gt;" Guid="e45de96d-7cd4-4c5c-b7c0-91b2738f2090" InformativeScreenshot="307a530fdccac2b6203c39ad7b6d1dbe.png" IsResponsive="True" Reference="3rVjfcpwoEWcrQkN7OaUrw/ZQ4ifmmsaEOq7_x8BLSWAA" ScopeSelectorArgument="&lt;wnd app='legacyinvoicingapp.exe' cls='HwndWrapper*' title='Contoso Invoicing' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                           <uix:Target CVScreenId="700c82e5-8e2e-42f2-8469-172528186398" CvTextArea="291, 461, 52, 12" CvTextArgument="Amount:" CvType="Text" DesignTimeRectangle="293, 459, 49, 16" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='lblAmount103' /&gt;&lt;ctrl name='Amount:' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='lblAmount103' /&gt;&lt;ctrl name='Amount:' role='text' automationid='' check:text='Amount:' /&gt;" Guid="67d07bc7-1e20-4a22-8e16-e3360936d7fa" SearchSteps="Selector, FuzzySelector, CV" />
                                         </scg:List>
                                       </uix:TargetAnchorable.Anchors>
                                     </uix:TargetAnchorable>
                                   </uix:NTypeInto.Target>
-                                  <uix:NTypeInto.VerifyOptions>
-                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
-                                        <InArgument x:TypeArguments="x:Boolean" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
-                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                        <InArgument x:TypeArguments="x:Double" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                    </uix:VerifyExecutionTypeIntoOptions>
-                                  </uix:NTypeInto.VerifyOptions>
                                 </uix:NTypeInto>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Status'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="04057fa7-2b0b-4405-a582-1cd5697f3421" Version="V4">
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Status'" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="04057fa7-2b0b-4405-a582-1cd5697f3421" Version="V4">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable CVScreenId="72e67602-dd87-4e66-9812-12dc09de1bc7" ContentHash="C4yNjPHf4EqNEPfIFxSBwA" CvElementArea="351, 489, 89, 28" CvType="InputBox" DesignTimeRectangle="352, 490, 86, 26" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='cmbStatusChooser103' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='cmbStatusChooser103' role='combo box' /&gt;" Guid="26ce6ea6-39ba-4d59-941a-8bc2ebea85ed" InformativeScreenshot="ad35007324766f3bbd6cab08114cdb2b.png" Reference="3rVjfcpwoEWcrQkN7OaUrw/ox5dWUymjkaHUzjqzHXcgA" ScopeSelectorArgument="&lt;wnd app='legacyinvoicingapp.exe' cls='HwndWrapper*' title='Contoso Invoicing' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                           <uix:Target CVScreenId="72e67602-dd87-4e66-9812-12dc09de1bc7" CvTextArea="306, 497, 37, 12" CvTextArgument="Status" CvType="Text" DesignTimeRectangle="307, 495, 35, 16" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='lblStatusChooser103' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='lblStatusChooser103' role='text' check:text='Status' /&gt;" Guid="9c064f92-6106-4ff6-8445-dd32fc28696f" SearchSteps="Selector, FuzzySelector, CV" />
                                         </scg:List>
                                       </uix:TargetAnchorable.Anchors>
                                     </uix:TargetAnchorable>
                                   </uix:NClick.Target>
-                                  <uix:NClick.VerifyOptions>
-                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                                      <uix:VerifyExecutionOptions.Retry>
-                                        <InArgument x:TypeArguments="x:Boolean" />
-                                      </uix:VerifyExecutionOptions.Retry>
-                                      <uix:VerifyExecutionOptions.Timeout>
-                                        <InArgument x:TypeArguments="x:Double" />
-                                      </uix:VerifyExecutionOptions.Timeout>
-                                    </uix:VerifyExecutionOptions>
-                                  </uix:NClick.VerifyOptions>
                                 </uix:NClick>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Invoiced'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="04057fa7-2b0b-4405-a582-1cd5697f3421" Version="V4">
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Invoiced'" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="04057fa7-2b0b-4405-a582-1cd5697f3421" Version="V4">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable CVScreenId="499733ef-9321-483c-a039-54075a73bb75" ContentHash="m7kwHMD0j0-FWmqAKD91vA" CvTextArea="5, 25, 46, 12" CvTextArgument="Invoiced" CvType="Text" DesignTimeRectangle="5, 25, 46, 12" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl name='Invoiced' role='list item' /&gt;&lt;ctrl name='Invoiced' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl name='Invoiced' role='list item' /&gt;&lt;ctrl name='Invoiced' role='text' automationid='' check:text='Invoiced' /&gt;" Guid="42d8e56e-1132-4415-8fce-800553915d40" InformativeScreenshot="dc2ec51f05001616ff6b055dee8fe86c.png" Reference="3rVjfcpwoEWcrQkN7OaUrw/N5utaVpoMUaF-5bU-_pfZQ" ScopeSelectorArgument="&lt;wnd app='legacyinvoicingapp.exe' cls='HwndWrapper*' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                           <uix:Target CVScreenId="144e1f98-278b-495a-ad82-aa555852c72b" CvTextArea="5, 5, 60, 12" CvTextArgument="Uninvoiced" CvType="Text" DesignTimeRectangle="5, 5, 60, 12" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl name='Uninvoiced' role='list item' /&gt;&lt;ctrl name='Uninvoiced' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl name='Uninvoiced' role='list item' /&gt;&lt;ctrl name='Uninvoiced' role='text' automationid='' check:text='Uninvoiced' /&gt;" Guid="470ba527-fc1a-426f-a594-cd115732c8f1" SearchSteps="Selector, FuzzySelector, CV" />
                                         </scg:List>
                                       </uix:TargetAnchorable.Anchors>
@@ -639,33 +589,23 @@
                                       </uix:TargetAnchorable.PointOffset>
                                     </uix:TargetAnchorable>
                                   </uix:NClick.Target>
-                                  <uix:NClick.VerifyOptions>
-                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                                      <uix:VerifyExecutionOptions.Retry>
-                                        <InArgument x:TypeArguments="x:Boolean" />
-                                      </uix:VerifyExecutionOptions.Retry>
-                                      <uix:VerifyExecutionOptions.Timeout>
-                                        <InArgument x:TypeArguments="x:Double" />
-                                      </uix:VerifyExecutionOptions.Timeout>
-                                    </uix:VerifyExecutionOptions>
-                                  </uix:NClick.VerifyOptions>
                                 </uix:NClick>
                                 <uix:NGetText DisplayName="Get Text 'ID'" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="04057fa7-2b0b-4405-a582-1cd5697f3421" TextString="[strIdRegister]" Version="V4">
                                   <uix:NGetText.Target>
                                     <uix:TargetAnchorable CVScreenId="96bb3499-e9dd-4c90-bd46-c3fda6f267e9" ContentHash="Ki9FV3x0DUasdnzVg6ervg" CvTextArea="351, 322, 27, 12" CvType="AnyWordGroup" DesignTimeRectangle="352, 320, 26, 16" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='tbInvoiceId103' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='tbInvoiceId103' role='text' /&gt;" Guid="6ff0e38b-d44d-4375-a4f6-e1aa49492d96" InformativeScreenshot="ca5b7f492f820404dcda21b20e0d3de9.png" Reference="3rVjfcpwoEWcrQkN7OaUrw/MWR2FPiHEkqx7eMEOYdO2Q" ScopeSelectorArgument="&lt;wnd app='legacyinvoicingapp.exe' cls='HwndWrapper*' title='Contoso Invoicing' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                           <uix:Target CVScreenId="96bb3499-e9dd-4c90-bd46-c3fda6f267e9" CvTextArea="325, 322, 18, 12" CvTextArgument="ID:" CvType="Text" DesignTimeRectangle="326, 320, 16, 16" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='lblInvoiceId103' /&gt;&lt;ctrl name='ID:' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Invoice Detail' role='page tab' /&gt;&lt;ctrl automationid='lblInvoiceId103' /&gt;&lt;ctrl name='ID:' role='text' automationid='' check:text='ID:' /&gt;" Guid="372b29b2-1846-4f9c-87fa-d4748171f2a0" SearchSteps="Selector, FuzzySelector, CV" />
                                         </scg:List>
                                       </uix:TargetAnchorable.Anchors>
                                     </uix:TargetAnchorable>
                                   </uix:NGetText.Target>
                                 </uix:NGetText>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '_Edit'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="04057fa7-2b0b-4405-a582-1cd5697f3421" Version="V4">
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '_Edit'" sap:VirtualizedContainerService.HintSize="382,218" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="04057fa7-2b0b-4405-a582-1cd5697f3421" Version="V4">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable CVScreenId="f09caa16-dca4-41a3-b624-ab2bfdbc15ab" ContentHash="u6ttyGvS-UWc9br3xjlpYA" CvElementArea="45, 55, 20, 20" CvType="Icon" DesignTimeRectangle="48, 58, 16, 16" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;ctrl automationid='imgSaveIconInner' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='imgSaveIconInner' role='graphic' /&gt;" Guid="b786973d-f806-454c-951d-52bb9dfbd366" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMLSURBVDhPrdPvTxp3AMfx/o9LHzTLsjRqgwyzFlHErgx1mK5Ft9bNbV1qlxmdbaeUikVBKyCVphPB1tUeBwcIx2/kx6F9+F7Azi4TugfzwSeXXO5e+Xxy3ztXqVQ4y5z7943/mxMwLmXYdAvsBCSymRz5fOGDSctZ/F4Br2uPdCp/GvR7woyPrPNgOkClrHD09i1HR0cnOTw8bKbeSL1OLnOA5UsnBo2N3Z14C9AbZuJrLwuzISoVhcN3SANQ6nVqSo1qtUq5XObg4IC0XMBieoJONcer0H+AmXSefD5PLpcjk8kiy2mSySSJeBxJkhBFkbAQY3zIxWDP4/YNb19/3/DvmYqiUKsdt2s812hXKpWQU3nGTKsYNIvstmt4+7qnCRaL5eOXy2WKpSKFQuG4bTZLOp0mlUoRl2TGTC76u228CrYCPWFujXqYnw2RzRTI5fPv5srHc/f3icVizcnRaBRRiHPT6KLv0qP24LdmN/MzQarV+slHUeoKNUWh+o/ZjaTlIjeuOenttPJyO9Ya/OardSYtXjaeirx4FnsfX4znXonn3ih+TwS/O4Lj0S7Gy3a0HQvstAMb59BsWGVYt4JJ68B45QnXPl/ii54lBjV2DGo7A+pFBrofY1AvMqhZQtthbQcKjA2vM2pYw9Tr4MfxNe7ccnN3wsu97338MuljamIDi2mZnk+n0avnMV5ZprfrA6Bl6CnmARf6bit+X5AbQ78zNblMIppCTqSJiXGscxt0fPQDly/OMtznbA9uegRumtYY0TvpVy2wu/OG0as2fv1pEzkuk0rsIwoiC3Nuus7/jLbjPiN6F7ouK6FAC/CZ+w3mwRWGdCv0qeaJhuOYr9q4N+kjIkgIewLB7ZfMTa+iujBFb9dDhvudaDuthLZagNsBEaPeysBnNjSfzLD1IsjY6EPufGdnzeXB4VjFarUzMf6AzvN3UX88g+6SFdWF3wj+IZ0GC4USe68Tzf8ytBUluZ8kIsYQxcZhjhGJSITDEV7/GSG41UiUUEBqXnPZ4mnwrHLm4F+ZKmiTQuQvowAAAABJRU5ErkJggg==" InformativeScreenshot="23663ce7646dae745678403371fb5df3.png" Reference="3rVjfcpwoEWcrQkN7OaUrw/APeAW6DhIUmGy6RAiHBkmg" ScopeSelectorArgument="&lt;wnd app='legacyinvoicingapp.exe' cls='HwndWrapper*' title='Contoso Invoicing' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                           <uix:Target CVScreenId="f09caa16-dca4-41a3-b624-ab2bfdbc15ab" CvTextArea="46, 34, 22, 12" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="47, 32, 20, 16" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Edit' role='menu item' /&gt;&lt;ctrl name='_Edit' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Edit' role='menu item' /&gt;&lt;ctrl name='_Edit' role='text' automationid='' check:text='_Edit' /&gt;" Guid="cf340faf-4a58-456c-8672-ad369956e069" SearchSteps="Selector, FuzzySelector, CV" />
                                         </scg:List>
                                       </uix:TargetAnchorable.Anchors>
@@ -682,7 +622,6 @@
                                     </uix:VerifyExecutionOptions>
                                   </uix:NClick.VerifyOptions>
                                 </uix:NClick>
-                                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382,115" sap2010:WorkflowViewState.IdRef="WriteLine_1" />
                               </Sequence>
                             </ActivityAction>
                           </uix:NApplicationCard.Body>
@@ -691,7 +630,7 @@
                           </uix:NApplicationCard.TargetApp>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
@@ -723,19 +662,19 @@
                           </Assign.Value>
                         </Assign>
                         <ui:RenameFileX DisplayName="Rename File" FilePath="[currentPDF]" sap:VirtualizedContainerService.HintSize="434,175" sap2010:WorkflowViewState.IdRef="RenameFileX_1" KeepExtension="True" NewName="[strNewNameFile]" />
-                        <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[Environment.CurrentDirectory + &quot;\data\processed\&quot;]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="434,182" sap2010:WorkflowViewState.IdRef="MoveFile_1" Path="[strAccountName]" />
+                        <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[Environment.CurrentDirectory + &quot;\data\processed\&quot;]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="434,182" sap2010:WorkflowViewState.IdRef="MoveFile_1" Path="[strNewNameFile]" />
                       </Sequence>
                     </Sequence>
                   </ActivityAction>
                 </ui:ForEach.Body>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:ForEach>
-              <Sequence DisplayName="WriteExcelFile" sap:VirtualizedContainerService.HintSize="450,222" sap2010:WorkflowViewState.IdRef="Sequence_28">
+              <Sequence DisplayName="WriteExcelFile" sap:VirtualizedContainerService.HintSize="581,222" sap2010:WorkflowViewState.IdRef="Sequence_28">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -748,7 +687,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="590,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="687,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
