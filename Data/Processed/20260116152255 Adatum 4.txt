@@ -1,0 +1,30 @@
+INVOICE
+
+DATE INVOICE NO ADATUM CORPORATION
+Nov 3, 20 22 1899 234 France Ave
+WA 76328
+www.adatum.com
+sales@adatum.com
+
+INVOICE TO
+Fabrikam, Inc.
+345 North St
+NY 98052
+
+Customer Id: 5791
+
+SALESPERSON PAYMENT TERMS
+
+Jacob Steffensen Due on Receipt
+
+QUANTITY DESCRIPTION UNIT PRICE LINE TOTAL
+
+01 Metal and stain control $14.87 $14.87
+
+01 Wall skimmer $34.95 $34.95
+
+01 Pump replacement $29.99 $29.99
+
+Subtotal: $79.81
+Sales Tax: $1.60
+Total: $81.41

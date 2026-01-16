@@ -1,0 +1,30 @@
+INVOICE
+
+DATE INVOICE NO ADATUM CORPORATION
+Oct 26, 20 22 1802 234 France Ave
+WA 76328
+www.adatum.com
+sales@adatum.com
+
+INVOICE TO
+Fabrikam, Inc.
+345 North St
+NY 98052
+
+Customer Id: 5791
+
+SALESPERSON PAYMENT TERMS
+
+Tomaz Bozic Due on Receipt
+
+QUANTITY DESCRIPTION UNIT PRICE LINE TOTAL
+
+12 Algae guard $7.88 $94.56
+
+01 Winter cover $78.48 $78.48
+
+05 Type B replacement $19.79 $98.95
+
+Subtotal: $271.99
+Sales Tax: $5.44
+Total: $277.43

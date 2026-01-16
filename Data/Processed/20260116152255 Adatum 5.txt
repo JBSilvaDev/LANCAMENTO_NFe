@@ -1,0 +1,30 @@
+INVOICE
+
+DATE INVOICE NO ADATUM CORPORATION
+Nov 9, 20 22 1905 234 France Ave
+WA 76328
+www.adatum.com
+sales@adatum.com
+
+INVOICE TO
+Fabrikam, Inc.
+345 North St
+NY 98052
+
+Customer Id: 5791
+
+SALESPERSON PAYMENT TERMS
+
+Klarissa Wolf Due on Receipt
+
+QUANTITY DESCRIPTION UNIT PRICE LINE TOTAL
+
+02 Type S1 filter $11.47 $22.94
+
+02 Pool winterizing $53.99 $107.98
+
+01 Pool connection hose $35.97 $35.97
+
+Subtotal: $166.89
+Sales Tax: $3.34
+Total: $170.23
