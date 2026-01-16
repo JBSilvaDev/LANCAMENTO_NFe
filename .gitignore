@@ -29,6 +29,7 @@
 .settings/
 .templates/
 .tmh/
+.storage/
 
 # Ignore temporary files
 *.tmp
