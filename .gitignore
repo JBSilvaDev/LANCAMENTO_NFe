@@ -35,6 +35,8 @@
 *.tmp
 *.temp
 ~$*
+Data/Config.xlsx
+
 
 # Ignore system files
 .DS_Store
