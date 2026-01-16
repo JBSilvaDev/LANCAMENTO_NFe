@@ -123,7 +123,7 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="ProcessData" sap:VirtualizedContainerService.HintSize="1282,778.04" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="ProcessData" sap:VirtualizedContainerService.HintSize="1241,803.04" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="x:String" Name="strPathExcel" />
       <Variable x:TypeArguments="sd:DataTable" Name="dtExcelSheet" />
@@ -174,7 +174,7 @@
               <av:PointCollection x:Key="ConnectorLocation">180,315 180,375</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="LoopAttachments" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="LoopAttachments" sap:VirtualizedContainerService.HintSize="615,5863" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="strExtractTextPDF" />
               <Variable x:TypeArguments="x:String" Name="strDate" />
@@ -189,13 +189,13 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentPDF" sap:VirtualizedContainerService.HintSize="581,5843" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[in_strPathFilesPDF]">
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentPDF" sap:VirtualizedContainerService.HintSize="581,5803" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[in_strPathFilesPDF]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="x:String">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:String" Name="currentPDF" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="547,5706" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="547,5666" sap2010:WorkflowViewState.IdRef="Sequence_10">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -296,14 +296,14 @@
                         </Assign.Value>
                       </Assign>
                     </Sequence>
-                    <Sequence DisplayName="SystemLaunch" sap:VirtualizedContainerService.HintSize="513,2916" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <Sequence DisplayName="SystemLaunch" sap:VirtualizedContainerService.HintSize="513,2876" sap2010:WorkflowViewState.IdRef="Sequence_8">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Preenchendo dados extraidos no banco de dados contoso&quot;]" />
-                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Contoso Invoicing" sap:VirtualizedContainerService.HintSize="450,2651" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="04057fa7-2b0b-4405-a582-1cd5697f3421" Version="V2">
+                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Contoso Invoicing" sap:VirtualizedContainerService.HintSize="450,2611" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="04057fa7-2b0b-4405-a582-1cd5697f3421" Version="V2">
                         <uix:NApplicationCard.Body>
                           <ActivityAction x:TypeArguments="x:Object">
                             <ActivityAction.Argument>
@@ -500,7 +500,7 @@
                         </Assign.Value>
                       </Assign>
                       <ui:RenameFileX DisplayName="Rename File" FilePath="[currentPDF]" sap:VirtualizedContainerService.HintSize="434,175" sap2010:WorkflowViewState.IdRef="RenameFileX_1" KeepExtension="True" NewName="[strNewNameFile]" />
-                      <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[Environment.CurrentDirectory + &quot;\data\processed\&quot;]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="434,182" sap2010:WorkflowViewState.IdRef="MoveFile_1" Path="[strNewNameFile]" />
+                      <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[Environment.CurrentDirectory + &quot;\Data\Processed\&quot;]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="434,182" sap2010:WorkflowViewState.IdRef="MoveFile_1" Path="[strNewNameFile]" />
                     </Sequence>
                   </Sequence>
                 </ActivityAction>

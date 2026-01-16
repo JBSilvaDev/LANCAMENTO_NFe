@@ -1,0 +1,28 @@
+INVOICE
+
+DATE INVOICE NO ADATUM CORPORATION
+Oct 23, 20 22 1783 234 France Ave
+WA 76328
+www.adatum.com
+sales@adatum.com
+
+INVOICE TO
+Fabrikam, Inc.
+345 North St
+NY 98052
+
+Customer Id: 5791
+
+SALESPERSON PAYMENT TERMS
+
+Klarissa Wolf Due on Receipt
+
+QUANTITY DESCRIPTION UNIT PRICE LINE TOTAL
+
+01 Solar heater mat $59.99 $59.99
+
+03 Water clarifier $9.48 $28.44
+
+Subtotal: $88.43
+Sales Tax: $1.77
+Total: $90.20
